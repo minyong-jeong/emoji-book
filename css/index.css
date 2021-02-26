@@ -48,6 +48,9 @@ header {
 }
 
 .navigator .tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
     font-size: 25px;
     color: white;

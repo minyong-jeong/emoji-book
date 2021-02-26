@@ -190,6 +190,8 @@ const flag = [
     "🇻🇮", "🇻🇳", "🇻🇺", "🇼🇫", "🇼🇸", "🇽🇰", "🇾🇪", "🇾🇹", "🇿🇦", "🇿🇲", "🇿🇼", "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "🏴󠁧󠁢󠁷󠁬󠁳󠁿", "🏴󠁵󠁳󠁴󠁸󠁿",
 ];
 
+const all = smiley.concat(food, handGesture, animal, nature, activity, people, travelAndPlace, object, symbol, flag);
+
 let preNav = "smiley";
 let currentNav = "smiley";
 
@@ -200,6 +202,10 @@ function createPage(nav) {
     let items;
     preNav = currentNav;
     switch (nav) {
+        case "all":
+            items = all;
+            currentNav = "all";
+            break;
         case "smiley":
             items = smiley;
             currentNav = "smiley";
@@ -295,6 +301,6 @@ function createTabEvent() {
 }
 
 window.onload = () => {
-    createPage("smiley");
+    createPage("all");
     createTabEvent();
 }
