@@ -162,7 +162,6 @@ function notification(str) {
     noti.className = "noti";
     noti.innerText = str + " Copied!";
     document.body.appendChild(noti);
-    noti.style.opacity = 1;
     setTimeout(() => {
         document.body.removeChild(noti);
     }, 1000);
