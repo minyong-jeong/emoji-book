@@ -22,14 +22,16 @@ header {
 }
 
 .container {
-    max-width: 935px;
+    max-width: 910px;
     margin: 0 auto;
 }
 
 .navigator {
-    width: 100%;
     display: flex;
-    background-color: blue;
+    background-color: rgb(35, 130, 255);
+    border: 1px solid rgb(71, 71, 71);
+    border-bottom: none;
+    overflow-x: scroll;
 }
 
 .navigator .tab {
@@ -38,6 +40,7 @@ header {
     color: white;
     cursor: pointer;
     user-select: none;
+    transition: 0.3s;
 }
 
 .card-container {
@@ -46,11 +49,13 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 1px solid black;
+    justify-content: center;
+    border: 1px solid rgb(71, 71, 71);
+    border-top: none;
 }
 
 .card-container > .card {
-    margin: 1px;
+    margin: 2px;
     position: relative;
     display: flex;
     align-items: center;
