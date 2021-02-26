@@ -17,3 +17,7 @@
 Emoji Book: [Link](https://minyong-jeong.github.io/emoji-book/)
 
 ![image](./assets/emoji.jpg)
+
+## LICENSE
+
+[MIT](https://github.com/minyong-jeong/emoji-book/blob/gh-pages/LICENSE)
