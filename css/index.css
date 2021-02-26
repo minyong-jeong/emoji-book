@@ -1,4 +1,11 @@
+@font-face {
+    font-family: 'BMJUA';
+    src:url('../assets/fonts/BMJUA_ttf.ttf');
+    src:url('../assets/fonts/BMJUA_otf.otf');
+}
+
 * {
+    font-family: 'BMJUA';
     box-sizing: border-box;
 }
 
