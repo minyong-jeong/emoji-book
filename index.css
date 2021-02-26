@@ -43,6 +43,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     border: 1px solid black;
 }
 
@@ -86,4 +87,10 @@
 
 .darkness:hover {
     opacity: 0.9;
+}
+
+@media (hover: none) {
+    .darkness:hover {
+        opacity: 0;
+    }
 }
