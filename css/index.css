@@ -40,6 +40,7 @@ header {
 }
 
 .navigator {
+    position: relative;
     display: flex;
     background-color: rgb(35, 130, 255);
     border: 1px solid rgb(71, 71, 71);
@@ -57,6 +58,19 @@ header {
     cursor: pointer;
     user-select: none;
     transition: 0.3s;
+}
+
+.navigator .arrow {
+    display: none;
+    pointer-events: none;
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    opacity: 0.7;
+    font-size: 20px;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
 }
 
 .card-container {
@@ -111,3 +125,9 @@ header {
 .darkness:hover {
     opacity: 0.9;
 }
+
+@media screen and (max-width: 650px) {
+    .navigator .arrow {
+        display: inline;
+    }
+} 
