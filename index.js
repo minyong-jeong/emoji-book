@@ -1,4 +1,4 @@
-const smileys = [
+const smiley = [
     "😀", "😃", "😄", "😁", "😆", "😅", "🤣", "😂", "🙂", "🙃",
     "😉", "😊", "😇", "🥰", "😍", "🤩", "😘", "😗", "☺️", "😚",
     "😙", "🥲", "😋", "😛", "😜", "🤪", "😝", "🤑", "🤗", "🤭",
@@ -13,7 +13,7 @@ const smileys = [
     "🙀", "😿", "😾"  
 ];
 
-const foods = [
+const food = [
     "🍇", "🍈", "🍉", "🍊", "🍋", "🍌", "🍍", "🥭", "🍎", "🍏",
     "🍐", "🍑", "🍒", "🍓", "🫐", "🥝", "🍅", "🫒", "🥥", "🥑",
     "🍆", "🥔", "🥕", "🌽", "🌶️", "🫑", "🥒", "🥬", "🥦", "🧄",
@@ -28,7 +28,7 @@ const foods = [
     "🍻", "🥂", "🥃", "🥤", "🧋", "🧃", "🧉", "🧊", "🥢", "🍽️", "🍴", "🥄"
 ];
 
-const handGestures = [
+const handGesture = [
     "💋", "👋", "🤚", "🖐️", "✋", "🖖", "👌", "🤌", "🤏", "✌️",
     "🤞", "🤟", "🤘", "🤙", "👈", "👉", "👆", "🖕", "👇", "☝️",
     "👍", "👎", "✊", "👊", "🤛", "🤜", "👏", "🙌", "👐",
@@ -37,7 +37,7 @@ const handGestures = [
     "👀", "👁️", "👅", "👄"
 ];
 
-const animalsAndNatures = [
+const animalAndNature = [
     "🙈", "🙉", "🙊", "💥", "💫", "💦", "💨", "🐵", "🐒", "🦍",
     "🦧", "🐶", "🐕", "🦮", "🐕‍🦺", "🐩", "🐺", "🦊", "🦝", "🐱",
     "🐈", "🐈‍⬛", "🦁", "🐯", "🐅", "🐆", "🐴", "🐎", "🦄", "🦓",
@@ -60,8 +60,23 @@ const animalsAndNatures = [
     "☔", "⚡", "❄️", "☃️", "⛄", "☄️", "🔥", "💧", "🌊", "🎄", "✨", "🎋", "🎍"
 ];
 
-let preNav = "smileys";
-let currentNav = "smileys";
+const activity = [
+    "🕴️", "🧗", "🧗‍♂️", "🧗‍♀️", "🤺", "🏇", "⛷️", "🏂", "🏌️", "🏌️‍♂️",
+    "🏌️‍♀️", "🏄", "🏄‍♂️", "🏄‍♀️", "🚣", "🚣‍♂️", "🚣‍♀️", "🏊", "🏊‍♂️", "🏊‍♀️",
+    "⛹️", "⛹️‍♂️", "⛹️‍♀️", "🏋️", "🏋️‍♂️", "🏋️‍♀️", "🚴", "🚴‍♂️", "🚴‍♀️", "🚵",
+    "🚵‍♂️", "🚵‍♀️", "🤸", "🤸‍♂️", "🤸‍♀️", "🤼", "🤼‍♂️", "🤼‍♀️", "🤽", "🤽‍♂️",
+    "🤽‍♀️", "🤾", "🤾‍♂️", "🤾‍♀️", "🤹", "🤹‍♂️", "🤹‍♀️", "🧘", "🧘‍♂️", "🧘‍♀️",
+    "🎪", "🛹", "🛼", "🛶", "🎗️", "🎟️", "🎫", "🎖️", "🏆", "🏅",
+    "🥇", "🥈", "🥉", "⚽", "⚾", "🥎", "🏀", "🏐", "🏈", "🏉",
+    "🎾", "🥏", "🎳", "🏏", "🏑", "🏒", "🥍", "🏓", "🏸", "🥊",
+    "🥋", "🥅", "⛳", "⛸️", "🎣", "🎽", "🎿", "🛷", "🥌", "🎯",
+    "🎱", "🎮", "🎰", "🎲", "🧩", "♟️", "🎭", "🎨", "🧵", "🧶",
+    "🎼", "🎤", "🎧", "🎷", "🪗", "🎸", "🎹", "🎺", "🎻", "🥁",
+    "🪘", "🎬", "🏹"
+]
+
+let preNav = "smiley";
+let currentNav = "smiley";
 
 function createPage(nav) {
     const cardContainer = document.querySelector(".card-container");
@@ -69,20 +84,23 @@ function createPage(nav) {
 
     let items;
     preNav = currentNav;
-    if (nav == "smileys") {
-        items = smileys;
-        currentNav = "smileys";
-    } else if (nav == "foods") {
-        items = foods;
-        currentNav = "foods";
-    } else if (nav == "handGestures") {
-        items = handGestures;
-        currentNav = "handGestures";
+    if (nav == "smiley") {
+        items = smiley;
+        currentNav = "smiley";
+    } else if (nav == "food") {
+        items = food;
+        currentNav = "food";
+    } else if (nav == "handGesture") {
+        items = handGesture;
+        currentNav = "handGesture";
+    } else if (nav == "animalAndNature") {
+        items = animalAndNature;
+        currentNav = "animalAndNature";
+    } else if (nav == "activity") {
+        items = activity;
+        currentNav = "activity";
     }
-    else if (nav == "animalsAndNatures") {
-        items = animalsAndNatures;
-        currentNav = "animalsAndNatures";
-    }
+
     document.getElementById(preNav).style.backgroundColor = 'blue';
     document.getElementById(currentNav).style.backgroundColor = 'red';
 
@@ -122,5 +140,5 @@ function notification(str) {
 }
 
 window.onload = () => {
-    createPage("smileys");
+    createPage("smiley");
 }
