@@ -1,4 +1,4 @@
-# Emoji Book 📚
+# Emoji Book 📘
 
 💾 Copy & 📝 Paste Emoji.
 
