@@ -192,8 +192,8 @@ const flag = [
 
 const all = smiley.concat(food, handGesture, animal, nature, activity, people, travelAndPlace, object, symbol, flag);
 
-let preNav = "smiley";
-let currentNav = "smiley";
+let preNav = "all";
+let currentNav = "all";
 
 function createPage(nav) {
     const cardContainer = document.querySelector(".card-container");
@@ -251,7 +251,7 @@ function createPage(nav) {
             currentNav = "flag";
             break;
         default:
-            console.log("Cannot found nav (${nav})");
+            console.log(`Cannot found nav (${nav})`);
             return;
     }
 
@@ -291,7 +291,7 @@ function notification(str) {
     }, 1000);
 }
 
-function createTabEvent() {
+function initNav() {
     const tabs = document.getElementsByClassName('tab');
     for (let i = 0; i < tabs.length; i++) {
         tabs[i].addEventListener('click', () => {
@@ -302,5 +302,5 @@ function createTabEvent() {
 
 window.onload = () => {
     createPage("all");
-    createTabEvent();
+    initNav();
 }
