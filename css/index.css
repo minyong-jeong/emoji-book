@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    background-color: #f9f9fd;
+}
+
 .noti {
     position: fixed;
     width: 170px;
@@ -24,6 +28,7 @@ header {
 .container {
     max-width: 910px;
     margin: 0 auto;
+    background-color: white;
 }
 
 .navigator {
@@ -50,8 +55,8 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #fcfcfc;
     border: 1px solid rgb(71, 71, 71);
-    border-top: none;
 }
 
 .card-container > .card {
@@ -64,7 +69,7 @@ header {
     width: 55px;
     height: 55px;
     font-size: 25px;
-    background-color: #f3f2f2;
+    background-color: white;
     cursor: pointer;
     border: 1px solid black;
     overflow: hidden;
