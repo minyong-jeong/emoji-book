@@ -63,14 +63,13 @@ header {
 .navigator .arrow {
     display: none;
     pointer-events: none;
-    position: absolute;
+    position: sticky;
     font-weight: bold;
     color: white;
     opacity: 0.7;
     font-size: 20px;
-    top: 50%;
-    right: 5px;
-    transform: translateY(-50%);
+    top: 0;
+    right: 0;
 }
 
 .card-container {
@@ -128,6 +127,8 @@ header {
 
 @media screen and (max-width: 650px) {
     .navigator .arrow {
-        display: inline;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 } 
