@@ -110,29 +110,38 @@ function createPage(nav) {
 
     let items;
     preNav = currentNav;
-    if (nav == "smiley") {
-        items = smiley;
-        currentNav = "smiley";
-    } else if (nav == "food") {
-        items = food;
-        currentNav = "food";
-    } else if (nav == "handGesture") {
-        items = handGesture;
-        currentNav = "handGesture";
-    } else if (nav == "animalAndNature") {
-        items = animalAndNature;
-        currentNav = "animalAndNature";
-    } else if (nav == "activity") {
-        items = activity;
-        currentNav = "activity";
-    } else if (nav == "people") {
-        items = people;
-        currentNav = "people";
+    switch (nav) {
+        case "smiley":
+            items = smiley;
+            currentNav = "smiley";
+            break;
+        case "food":
+            items = food;
+            currentNav = "food";
+            break;
+        case "handGesture":
+            items = handGesture;
+            currentNav = "handGesture";
+            break;
+        case "animalAndNature":
+            items = animalAndNature;
+            currentNav = "animalAndNature";
+            break;
+        case "activity":
+            items = activity;
+            currentNav = "activity";
+            break;
+        case "people":
+            items = people;
+            currentNav = "people";
+            break;
+        default:
+            console.log("Cannot found nav (${nav})");
+            return;
     }
 
     document.getElementById(preNav).style.backgroundColor = 'blue';
     document.getElementById(currentNav).style.backgroundColor = 'red';
-
     for (var i = 0; i < items.length; i++) {
         const div = document.createElement("div");
         div.className = "card";
@@ -167,6 +176,16 @@ function notification(str) {
     }, 1000);
 }
 
+function createTabEvent() {
+    const tabs = document.getElementsByClassName('tab');
+    for (let i = 0; i < tabs.length; i++) {
+        tabs[i].addEventListener('click', () => {
+            createPage(tabs[i].id);
+        });
+    }
+}
+
 window.onload = () => {
     createPage("smiley");
+    createTabEvent();
 }

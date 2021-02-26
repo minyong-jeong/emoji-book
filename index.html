@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="index.css">
-    <title>emoji</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <script async defer src="js/buttons.js"></script>
+    <title>Emoji Book 📚</title>
 </head>
 <body>
+    <header>
+        <h1>Emoji Book 📚</h1>
+        <div class="github-buttons">
+            <a class="github-button" href="https://github.com/minyong-jeong" data-show-count="true" aria-label="Follow @minyong-jeong on GitHub">Follow</a>
+            <a class="github-button" href="https://github.com/minyong-jeong/emoji/issues" data-icon="octicon-issue-opened" data-show-count="true" aria-label="Issue minyong-jeong/emoji on GitHub">Issue</a>
+            <a class="github-button" href="https://github.com/minyong-jeong/emoji" data-icon="octicon-star" data-show-count="true" aria-label="Star minyong-jeong/emoji on GitHub">Star</a>
+        </div>
+    </header>
     <div class="container">
         <div class="navigator">
-            <div class="tab" id="smiley" onclick="createPage('smiley')">😀</div>
-            <div class="tab" id="handGesture" onclick="createPage('handGesture')">👋</div>
-            <div class="tab" id="animalAndNature" onclick="createPage('animalAndNature')">🐍</div>
-            <div class="tab" id="food" onclick="createPage('food')">🍔</div>
-            <div class="tab" id="activity" onclick="createPage('activity')">⚾</div>
-            <div class="tab" id="people" onclick="createPage('people')">👶</div>
+            <div class="tab" id="smiley">😀</div>
+            <div class="tab" id="handGesture">👋</div>
+            <div class="tab" id="animalAndNature">🐍</div>
+            <div class="tab" id="food">🍔</div>
+            <div class="tab" id="activity">⚾</div>
+            <div class="tab" id="people">👶</div>
         </div>
         <div id="card-container" class="card-container"></div>
     </div>
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
