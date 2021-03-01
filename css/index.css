@@ -1,9 +1,11 @@
-* {
-    font-family: arial;
-    box-sizing: border-box;
+@font-face {
+    font-family: 'BMJUA';
+    src:url('../assets/fonts/BMJUA_ttf.ttf');
+    src:url('../assets/fonts/BMJUA_otf.otf');
 }
 
 html, body {
+    font-family: 'BMJUA';
     background-color: rgb(20, 20, 20);
 }
 
