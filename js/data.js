@@ -112,7 +112,10 @@ let data = {
         {"emoji":"😽","description":"KissingCat"},
         {"emoji":"🙀","description":"WearyCat"},
         {"emoji":"😿","description":"CryingCat"},
-        {"emoji":"😾","description":"PoutingCat"}
+        {"emoji":"😾","description":"PoutingCat"},
+        {"emoji":"😮‍💨","description":"FaceExhaling"},
+        {"emoji":"😵‍💫","description":"FacewithSpiralEyes"},
+        {"emoji":"😶‍🌫️","description":"FaceinClouds"}
     ],
     "handGestures": [
         {"emoji":"💋","description":"KissMark"},
@@ -466,10 +469,7 @@ let data = {
         {"emoji":"💄","description":"Lipstick"},
         {"emoji":"💍","description":"Ring"},
         {"emoji":"💼","description":"Briefcase"},
-        {"emoji":"🩸","description":"DropofBlood"},
-        {"emoji":"😮‍💨","description":"FaceExhaling"},
-        {"emoji":"😵‍💫","description":"FacewithSpiralEyes"},
-        {"emoji":"😶‍🌫️","description":"FaceinClouds"}
+        {"emoji":"🩸","description":"DropofBlood"}
     ],
     "animals": [
         {"emoji": "🙈", "description": "See-No-Evil Monkey"},
