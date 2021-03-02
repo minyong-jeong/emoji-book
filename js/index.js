@@ -29,6 +29,8 @@ function createPage(nav) {
         `
         cardContainer.appendChild(div);
     }
+    const title = nav[0].toUpperCase() + nav.slice(1, nav.length);
+    document.getElementById("card-title").innerText = title;
     currentNav = nav;
 }
 

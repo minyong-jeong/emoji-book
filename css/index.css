@@ -77,6 +77,17 @@ header {
     right: 10px;
 }
 
+#card-title {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(71, 71, 71);
+    border-bottom: 0;
+    box-sizing: border-box;
+}
+
 .card-container {
     padding: 10px;
     margin: 0 auto;
@@ -86,6 +97,7 @@ header {
     justify-content: center;
     background-color: rgb(245, 245, 245);
     border: 1px solid rgb(71, 71, 71);
+    border-top: 0;
 }
 
 .card-container > .card {
