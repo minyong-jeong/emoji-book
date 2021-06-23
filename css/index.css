@@ -50,7 +50,6 @@ header {
     background-color: rgb(35, 130, 255);
     border: 1px solid rgb(71, 71, 71);
     border-bottom: none;
-    overflow-x: scroll;
 }
 
 .navigator .tab {
@@ -143,6 +142,10 @@ header {
 }
 
 @media screen and (max-width: 700px) {
+    .navigator {
+        overflow-x: scroll;
+    }
+
     .navigator .arrow {
         display: flex;
         justify-content: center;
