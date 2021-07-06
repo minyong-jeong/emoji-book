@@ -1,4 +1,4 @@
-let currentNav = "smileys";
+let currentNav = "all";
 
 function copyStringToClipboard (str) {
     console.log(str + " copied!");
@@ -68,7 +68,21 @@ let filter, i, txtValue;
 }
 
 window.onload = () => {
-    createPage("smileys");
+    data["all"] = [
+        ...data["smileys"],
+        ...data["handGestures"],
+        ...data["people"],
+        ...data["clothingAndAccessories"],
+        ...data["animals"],
+        ...data["nature"],
+        ...data["foodsAndDrink"],
+        ...data["activity"],
+        ...data["travelAndPlaces"],
+        ...data["objects"],
+        ...data["symbols"],
+        ...data["flags"]
+    ];
+    createPage("all");
     initNav();
     document.getElementById("myinput").addEventListener("keyup", tableFilter);
 }
